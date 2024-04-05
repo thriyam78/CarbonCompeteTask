@@ -19,7 +19,7 @@ const CalculationPage = () => {
     if (result !== null) {
       const ctx = document.getElementById('myChart');
       if (chartRef.current !== null) {
-        chartRef.current.destroy(); // Destroy previous chart instance
+        chartRef.current.destroy(); 
       }
       chartRef.current = new Chart(ctx, {
         type: 'bar',
